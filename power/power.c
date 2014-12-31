@@ -19,7 +19,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define LOG_TAG "V2wifixx PowerHAL"
+#define LOG_TAG "v2wifixx PowerHAL"
 #include <utils/Log.h>
 
 #include <hardware/hardware.h>

@@ -44,7 +44,7 @@ on early-init
 
 on property:sys.boot_completed=1
     write /sys/block/mmcblk0/queue/scheduler row
-    
+
     # Interactive
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor interactive
@@ -60,10 +60,9 @@ on property:sys.boot_completed=1
 
     # Configure the cpu-boost module
     #write /sys/module/cpu_boost/parameters/boost_ms 10
-    #write /sys/module/cpu_boost/parameters/sync_threshold 1500000
     #write /sys/module/cpu_boost/parameters/input_boost_freq 1200000
     #write /sys/module/cpu_boost/parameters/input_boost_ms 40
-  
+
 on post-fs-data
     # we will remap this as /mnt/sdcard with the sdcard fuse tool
     mkdir /data/media 0770 media_rw media_rw
@@ -207,7 +206,7 @@ on boot
     chown system radio /sys/class/sensors/barometer_sensor/name
     chown system radio /sys/class/sensors/barometer_sensor/calibration
 # Magnetic_sensor
-    chown system radio /dev/akm8963
+    chown system radio /dev/akm09911
     chown system radio /sys/class/sensors/magnetic_sensor/raw_data
     chown system radio /sys/class/sensors/magnetic_sensor/vendor
     chown system radio /sys/class/sensors/magnetic_sensor/name
@@ -525,7 +524,7 @@ on property:ro.securestorage.support=true
     mkdir /dev/.secure_storage
     chmod 0711 /dev/.secure_storage
     chown system system /dev/.secure_storage
-    restorecon -R /dev/.secure_storage
+    restorecon_recursive /dev/.secure_storage
     start secure_storage
 
 # CS service

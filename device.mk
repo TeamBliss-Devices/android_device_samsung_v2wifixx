@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
 
 # Media profile
 PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml  \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
@@ -97,7 +101,6 @@ PRODUCT_PACKAGES += \
     mcDriverDaemon
 
 # Network tools
-
 PRODUCT_PACKAGES += \
     libpcap \
     tcpdump
@@ -134,7 +137,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     power.universal5420
-    
+
 # Ramdisk
 TARGET_PROVIDES_INIT_RC := true
 
@@ -169,6 +172,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
+
+PRODUCT_PACKAGES += \
+    dhcpcd.conf \
+    hostapd \
+    hostapd_default.conf \
+    libwpa_client \
+    wpa_supplicant
+
 
 PRODUCT_PACKAGES += \
     libnetcmdiface \
