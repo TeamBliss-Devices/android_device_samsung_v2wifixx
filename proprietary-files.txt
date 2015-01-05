@@ -56,6 +56,7 @@ bin/gpsd
 etc/gps.conf
 etc/gps.xml
 lib/hw/gps.default.so
+lib/hw/gps.goldfish.so
 
 # LPM
 bin/lpm
