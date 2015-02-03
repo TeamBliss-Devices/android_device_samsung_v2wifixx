@@ -2,7 +2,7 @@ $(call inherit-product, device/samsung/v2wifixx/full_v2wifixx.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/bliss/config/common_full_tablet_wifionly.mk)
-
+PRODUCT_BRAND := samsung
 PRODUCT_NAME := bliss_v2wifixx
 PRODUCT_DEVICE := v2wifixx
 
