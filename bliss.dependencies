@@ -2,7 +2,7 @@
     {
         "remote": "github",
         "repository": "Pentahex/android_kernel_samsung_v2wifixx",
-        "target_path": "kernel/samsung/exynos5420",
+        "target_path": "kernel/samsung/v2wifixx",
         "revision": "master"
     },
     {
