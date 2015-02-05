@@ -1,7 +1,7 @@
 [
     {
-        "remote": "github",
-        "repository": "ArchiDroid/android_kernel_samsung_v2wifixx",
+        "remote": "cm",
+        "repository": "android_kernel_samsung_exynos5420",
         "target_path": "kernel/samsung/exynos5420",
         "revision": "cm-12.0"
     },
