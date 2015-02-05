@@ -1,9 +1,9 @@
 [
     {
-        "remote": "cm",
-        "repository": "android_kernel_samsung_exynos5420",
+        "remote": "github",
+        "repository": "Pentahex/android_kernel_samsung_v2wifixx",
         "target_path": "kernel/samsung/exynos5420",
-        "revision": "cm-12.0"
+        "revision": "master"
     },
     {
         "remote": "cm",
