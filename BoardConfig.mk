@@ -46,7 +46,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 TARGET_OTA_ASSERT_DEVICE := v2wifixx
 
 # Camera
-
 # COMMON_GLOBAL_CFLAGS += -DUSE_MEMORY_HEAP_ION
 BOARD_NEEDS_MEMORYHEAPION := true
 COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
@@ -57,8 +56,7 @@ COMMON_GLOBAL_CFLAGS += -DSAMSUNG_DVFS
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_CONFIG := cyanogenmod_v2wifixx_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/v2wifixx
-
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos5420
 
 # Battery
 BOARD_BATTERY_DEVICE_NAME := battery
@@ -150,6 +148,7 @@ BOARD_SEPOLICY_UNION += \
 	servicemanager.te \
 	system_app.te \
 	system_server.te \
+	vold.te \
 	wpa.te
 
 # SurfaceFlinger

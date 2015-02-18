@@ -27,7 +27,7 @@ lib/libsecnativefeature.so
 lib/libvdis.so
 
 # DRM
-bin/drmserver
+bin/drmserver.samsung
 lib/libstagefright_hdcp.so
 vendor/lib/libdrmdecrypt.so
 vendor/lib/liboemcrypto.so
@@ -38,7 +38,6 @@ vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-
 lib/omx/libOMX.Exynos.AVC.Decoder.so
 lib/omx/libOMX.Exynos.AVC.Encoder.so
 lib/omx/libOMX.Exynos.MPEG4.Decoder.so
@@ -56,7 +55,6 @@ bin/gpsd
 etc/gps.conf
 etc/gps.xml
 lib/hw/gps.default.so
-lib/hw/gps.goldfish.so
 
 # LPM
 bin/lpm
@@ -139,8 +137,8 @@ etc/wifi/bcmdhd_ibss.bin_4354_a0
 etc/wifi/bcmdhd_mfg.bin_4354_a0
 etc/wifi/bcmdhd_sta.bin_4354_a0
 etc/wifi/bcmdhd_apsta.bin_4354_a1
-etc/wifi/bcmdhd_mfg.bin_4354_a1
 etc/wifi/bcmdhd_ibss.bin_4354_a1
+etc/wifi/bcmdhd_mfg.bin_4354_a1
 etc/wifi/bcmdhd_sta.bin_4354_a1
 etc/wifi/bcmdhd_apsta.bin_a0
 etc/wifi/bcmdhd_ibss.bin_a0
