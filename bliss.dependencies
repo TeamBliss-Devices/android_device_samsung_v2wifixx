@@ -1,7 +1,7 @@
 [
     {
         "remote": "github",
-        "repository": "nerdyblonde/android_kernel_samsung_exynos5420",
+        "repository": "nerdyblonde/v2wifixx_kernel",
         "target_path": "kernel/samsung/exynos5420",
         "revision": "cm-12.1"
     },
