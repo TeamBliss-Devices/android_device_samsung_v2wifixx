@@ -174,14 +174,3 @@ WIFI_DRIVER_FW_PATH_STA          := "/system/etc/wifi/bcmdhd_sta.bin"
 
 # inherit from the proprietary version
 -include vendor/samsung/v2wifixx/BoardConfigVendor.mk
-
-# BlissPop Config Flags  
-TARGET_TC_ROM := 5.2-linaro
-TARGET_TC_KERNEL := 5.2-linaro
-BLISSIFY := true
-BLISS_O3 := true
-BLISS_STRICT := false
-BLISS_GRAPHITE := true
-BLISS_PIPE := true
-TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
